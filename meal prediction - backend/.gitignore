@@ -1,0 +1,38 @@
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Environment variables
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model files (if large, consider using Git LFS)
+# *.keras
+# *.h5
+
+# Logs
+*.log
+
+dataset/*
+model/ingredient_model_EfficientNetV2B0.keras
+model/portion_independent.keras
