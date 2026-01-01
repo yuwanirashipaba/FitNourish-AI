@@ -3,7 +3,7 @@ function NutrientCard({ nutrient }) {
     <div className="nutrient-card">
       <div className="nutrient-header">
         <span className="nutrient-name">{nutrient.name}</span>
-        <span className="nutrient-percentage">{nutrient.percentage.toFixed(1)}%</span>
+        {/* <span className="nutrient-percentage">{nutrient.percentage.toFixed(1)}%</span> */}
       </div>
       <div className="nutrient-amount">
         {nutrient.amount.toFixed(1)} {nutrient.unit}

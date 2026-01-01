@@ -57,7 +57,6 @@ class MealNutrient(BaseModel):
     name: str
     amount: float
     unit: str
-    percentage: float
 
 class MealSuggestion(BaseModel):
     meal_name: str
@@ -277,20 +276,17 @@ async def suggest_meals(request: MealSuggestionRequest):
                 {
                     "name": "Fat",
                     "amount": round(meal_detail.get('total_fat', 0), 2),
-                    "unit": "g",
-                    "percentage": round(meal_detail.get('fat_pc', 0), 1)
+                    "unit": "g"
                 },
                 {
                     "name": "Carbohydrates",
                     "amount": round(meal_detail.get('total_carb', 0), 2),
-                    "unit": "g",
-                    "percentage": round(meal_detail.get('carb_pc', 0), 1)
+                    "unit": "g"
                 },
                 {
                     "name": "Protein",
                     "amount": round(meal_detail.get('total_protein', 0), 2),
-                    "unit": "g",
-                    "percentage": round(meal_detail.get('protein_pc', 0), 1)
+                    "unit": "g"
                 }
             ]
             

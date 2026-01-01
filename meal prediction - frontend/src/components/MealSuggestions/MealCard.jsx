@@ -38,9 +38,6 @@ function MealCard({ meal }) {
                 <span className="nutrient-amount-small">
                   {nutrient.amount.toFixed(1)} {nutrient.unit}
                 </span>
-                <span className="nutrient-percentage-small">
-                  ({nutrient.percentage.toFixed(1)}%)
-                </span>
               </div>
             ))}
           </div>

@@ -12,7 +12,7 @@ function App() {
         <MealAnalysisPanel />
         <MealSuggestionsPanel />
       </div>
-    </div>
+      </div>
   )
 }
 

@@ -14,7 +14,7 @@ function IngredientItem({ ingredient }) {
         <span className="ingredient-name">{ingredient.name}</span>
         <span className="ingredient-amount">{ingredient.amount} {ingredient.unit}</span>
       </div>
-      <div className="ingredient-possibility">
+      {/* <div className="ingredient-possibility">
         <span className="possibility-label">Possibility:</span>
         <span 
           className="possibility-value"
@@ -31,7 +31,7 @@ function IngredientItem({ ingredient }) {
             }}
           ></div>
         </div>
-      </div>
+      </div> */}
     </li>
   )
 }

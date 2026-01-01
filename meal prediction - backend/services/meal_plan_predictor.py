@@ -7,6 +7,11 @@ daily calorie goals and meal frequency preferences.
 
 import pandas as pd
 from pathlib import Path
+import logging
+
+# Configure logging
+logging.basicConfig(level=logging.INFO, format='%(message)s')
+logger = logging.getLogger(__name__)
 
 def data_preparation(daily_calorie_target, num_meals, calorie_distribution_ratios, target_macro_ratios):
 
@@ -151,6 +156,19 @@ def generate_meal_plan(total_calories: float, meals_per_day: int, calorie_distri
         meal_plan.append(selected_dish_row.to_dict())
 
         print(f"Selected dish for Meal {i+1}: {selected_dish_id} with {selected_dish_row['total_calories']:.1f} kcal")
+        
+        # Log macronutrient breakdown for this meal
+        meal_fat = selected_dish_row.get('total_fat', 0)
+        meal_protein = selected_dish_row.get('total_protein', 0)
+        meal_carbs = selected_dish_row.get('total_carb', 0)
+        meal_mass = selected_dish_row.get('total_mass', 0)
+        
+        logger.info(f"Meal {i+1} Macronutrients:")
+        logger.info(f"  Fat: {meal_fat:.1f}g")
+        logger.info(f"  Protein: {meal_protein:.1f}g")
+        logger.info(f"  Carbohydrates: {meal_carbs:.1f}g")
+        logger.info(f"  Mass: {meal_mass:.1f}g")
+        logger.info(f"  Calories: {selected_dish_row['total_calories']:.1f} kcal")
 
         # Remove the selected dish from available_dishes for subsequent meals
         available_dishes = available_dishes[available_dishes['dish'] != selected_dish_id].copy()
