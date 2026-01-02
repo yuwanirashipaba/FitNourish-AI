@@ -12,7 +12,7 @@ function IngredientItem({ ingredient }) {
     <li className="ingredient-item">
       <div className="ingredient-info">
         <span className="ingredient-name">{ingredient.name}</span>
-        <span className="ingredient-amount">{ingredient.amount} {ingredient.unit}</span>
+        {/* <span className="ingredient-amount">{ingredient.amount} {ingredient.unit}</span> */}
       </div>
       {/* <div className="ingredient-possibility">
         <span className="possibility-label">Possibility:</span>
