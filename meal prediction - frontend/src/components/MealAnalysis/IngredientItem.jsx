@@ -1,9 +1,9 @@
 function IngredientItem({ ingredient }) {
   const getPossibilityColor = (possibility) => {
-    if (possibility >= 90) return '#10b981'
-    if (possibility >= 75) return '#3b82f6'
-    if (possibility >= 60) return '#f59e0b'
-    return '#ef4444'
+    if (possibility >= 90) return '#2ea37a'
+    if (possibility >= 75) return '#45b890'
+    if (possibility >= 60) return '#7dd3af'
+    return '#a0d9c2'
   }
 
   const color = getPossibilityColor(ingredient.possibility)
@@ -12,7 +12,7 @@ function IngredientItem({ ingredient }) {
     <li className="ingredient-item">
       <div className="ingredient-info">
         <span className="ingredient-name">{ingredient.name}</span>
-        {/* <span className="ingredient-amount">{ingredient.amount} {ingredient.unit}</span> */}
+        <span className="ingredient-amount">{ingredient.amount} {ingredient.unit}</span>
       </div>
       {/* <div className="ingredient-possibility">
         <span className="possibility-label">Possibility:</span>
