@@ -7,14 +7,9 @@ An intelligent, AI-powered nutrition assistant that delivers personalized meal p
 - [Project Overview](#project-overview)
 - [Architecture](#architecture)
 - [Key Features](#key-features)
-- [Project Structure](#project-structure)
 - [Installation](#installation)
 - [Project Dependencies](#project-dependencies)
-- [Getting Started](#getting-started)
-- [API Documentation](#api-documentation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## 🎯 Project Overview
 
