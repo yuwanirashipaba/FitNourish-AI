@@ -106,15 +106,15 @@ def predict_nutrients_from_image(image_file, model_path: str = None) -> dict:
             # Use relative path from project root
             base_path = Path(__file__).parent.parent
             # Try 'model' (singular) first, then 'models' (plural)
-            model_path = base_path / 'model' / 'portion_independent.keras'
+            model_path = base_path / 'model' / 'nutrient_model_portion_independent.keras'
             
             # Fallback to 'models' (plural) if 'model' doesn't exist
             if not model_path.exists():
-                model_path = base_path / 'models' / 'portion_independent.keras'
+                model_path = base_path / 'models' / 'nutrient_model_portion_independent.keras'
             
             # Final fallback to absolute path
             if not model_path.exists():
-                model_path = Path('/models/portion_independent.keras')
+                model_path = Path('/models/nutrient_model_portion_independent.keras')
         
         # Load the model
         if not os.path.exists(model_path):

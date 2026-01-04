@@ -36,4 +36,4 @@ Thumbs.db
 
 dataset/*
 model/ingredient_model_EfficientNetV2B0.keras
-model/portion_independent.keras
+model/nutrient_model_portion_independent.keras
