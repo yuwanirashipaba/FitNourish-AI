@@ -91,11 +91,18 @@ def make_ingredient_prediction(img, model, class_map=None):
     
     predictions = model.predict(img, verbose=0)[0]
     
-    # Get top 5 predictions
-    indices = np.argsort(predictions)[::-1][:5]
-    probs = [float(predictions[i]) * 100 for i in indices]  # Convert to percentages
-    predicted_labels = [class_map.get(i, f"ingredient_{i}") for i in indices]
+    # Get top predictions (get more than 5 to account for filtering)
+    indices = np.argsort(predictions)[::-1]
     
+    # Filter to only include indices that are in class_map
+    valid_indices = [i for i in indices if i in class_map]
+    
+    # Take top 5 valid predictions
+    valid_indices = valid_indices[:5]
+    
+    # Get labels and probabilities for valid indices only
+    predicted_labels = [class_map[i] for i in valid_indices]
+    probs = [float(predictions[i]) * 100 for i in valid_indices]  # Convert to percentages
     return predicted_labels, probs
 
 

@@ -135,7 +135,7 @@ async def analyze_meal(image: UploadFile = File(...)):
                 estimated_amount = 100 / len(ingredient_names) if ingredient_names else 100
             
             # Only include ingredients with reasonable confidence (>10%)
-            if probability >= 10.0:
+            if probability >= 5.0:
                 ingredients.append({
                     "name": ingredient_name.title(),  # Capitalize ingredient names
                     "amount": round(estimated_amount, 1),
