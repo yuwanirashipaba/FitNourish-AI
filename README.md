@@ -268,6 +268,68 @@ Professional, user-centric mobile application design
    - Nutritional information
    - Calorie content
   
+
+  
+
+### Component 3 - AI-Powered Predictive Health Alert and Progress Tracking System​
+
+<table>
+<tr>
+<td width="100%">
+  <img src="images/health-risk.jpg" alt="Meal Analysis Interface" />
+</td>
+
+</tr>
+</table>
+
+#### Health Data Input
+
+Connect a smartwatch or wearable device (or use simulated data)
+Automatically collect daily health data:
+  Physical activity level
+  Blood pressure
+  Sleep duration and quality
+Enter additional user details:
+  Age, gender, weight
+  Lifestyle habits
+  Daily food intake (breakfast, lunch, dinner)
+
+
+#### Health Risk Prediction
+
+Navigate to the Health Prediction section
+Review automatically collected data from the wearable and user profile
+Enter additional inputs if required:
+  Current weight
+  Daily food intake
+Click "Predict Health Risk"
+  View prediction results:
+  Health risk level (Low / Medium / High)
+  Factors influencing the prediction
+  AI-based disclaimer
+  Predicted diet recommendations
+  Key health principles to follow
+
+
+#### Health Progress Tracking
+
+Open the Progress Tracking section
+View latest health measurements
+Analyze trends over time:
+  Daily, weekly, and monthly views
+Monitor:
+  Improvements or declines in activity, sleep, and vital signs
+View overall health summary and insights
+
+
+#### Alerts & Notifications
+
+Access the Alerts section
+Receive time-based notifications:
+  Before breakfast, lunch, and dinner
+  Risk-based health alerts
+View alert history
+Follow alerts to improve daily health behavior
      
 
   ### Component 4 - AI-powered Smart Grocery List Optimization and Nearest Store Recommendation
