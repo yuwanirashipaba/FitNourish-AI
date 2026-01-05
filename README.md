@@ -70,6 +70,21 @@ This component of FitNourish.AI focuses on delivering personalized nutrition rec
 
 🔹 Interface Overview
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img 
+        src="images/Component%2001%20snapshot.png" 
+        alt="FitNourish.AI Nutrition Prediction Mobile Interface"
+        width="70%"
+      />
+      <br/><br/>
+      <b>FitNourish.AI – Nutrition Profile Input & Prediction Result Interface</b>
+    </td>
+  </tr>
+</table>
+
+
 The mobile interface consists of two primary screens:
 
 Nutrition Profile Input Interface
