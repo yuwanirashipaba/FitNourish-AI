@@ -36,7 +36,23 @@ The system architecture of FitNourish AI is illustrated below:
 ![Architecture Diagram](images/architecture.jpeg)
 
 ## ✨ Key Features
-
+- **Personalized nutrition prediction** using a trained Machine Learning model
+- **Daily calorie requirement calculation** (kcal/day)
+- **Macronutrient prediction**:
+  - Protein (g/day)
+  - Carbohydrates (g/day)
+  - Fat (g/day)
+- **Multi-disease aware nutrition planning**:
+  - Diabetes support
+  - Hypertension support
+- **Goal-based nutrition optimization**:
+  - Maintain weight
+  - Lose weight
+  - Gain weight
+- **Activity-aware nutrition planning** using:
+  - Steps per day
+  - Active minutes
+  - Calories burned during activity
 - **Personalized meal planning** using machine learning
 - **Smartwatch-based biometric** and wellness monitoring
 - **Food image analysis** using computer vision
@@ -62,7 +78,157 @@ The system architecture of FitNourish AI is illustrated below:
 
 ## 💡 Usage
 
+​
 <!-- Add other member feature usages here-->
+🧩 Component 1 – AI-Powered Multi-Disease Adaptive Nutrition & Personalized Health Optimization
+
+This component of FitNourish.AI focuses on delivering personalized nutrition recommendations by combining user health profiles, lifestyle data, and machine-learning predictions. It is designed as a mobile-first interface suitable for real-world deployment and academic demonstration (PP1).
+
+🔹 Interface Overview
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img 
+        src="images/Component%2001%20snapshot.png" 
+        alt="FitNourish.AI Nutrition Prediction Mobile Interface"
+        width="45%"
+      />
+      <br/><br/>
+      <b>FitNourish.AI – Nutrition Profile Input & Prediction Result Interface</b>
+    </td>
+  </tr>
+</table>
+
+
+📱 Mobile Interface Overview
+
+The FitNourish.AI mobile application consists of two primary screens:
+
+Nutrition Profile Input Interface
+
+Nutrition Prediction Result Interface
+
+These screens guide users through a simple and intuitive workflow — from entering personal health data to receiving AI-generated nutrition insights.
+
+🧑‍⚕️ Nutrition Profile Input Interface
+
+This interface collects essential health, lifestyle, and activity data required for accurate nutrition prediction.
+
+📋 User Inputs
+
+Personal Information
+
+Age
+
+Gender (Male / Female)
+
+Height (cm)
+
+Weight (kg)
+
+Nutrition Goal
+
+Maintain weight
+
+Lose weight
+
+Gain weight
+
+Health Conditions
+
+Diabetes (Yes / No)
+
+Hypertension (Yes / No)
+
+Daily Activity Metrics
+
+Steps per day
+
+Active minutes
+
+Calories burned during activity
+
+🎨 Smart Validation & User Experience (UX)
+
+Input validation ensures realistic and medically meaningful values
+(e.g., step count limits, numeric constraints)
+
+Toggle buttons and dropdowns replace free-text inputs to reduce errors
+
+Green-themed UI aligns with the FitNourish.AI brand identity
+
+Mobile-friendly layout improves clarity, accessibility, and usability
+
+⌚ Smartwatch Data Integration (Demo Logic)
+
+During first-time setup, users manually enter activity data
+
+In real-world deployment, this data is designed to be:
+
+Automatically fetched from smartwatch or fitness-tracker APIs
+
+Periodically updated to keep nutrition recommendations current
+
+📊 Nutrition Prediction Result Interface
+
+After clicking “Predict & Save”, the validated input data is sent to the backend AI system for processing.
+
+🤖 AI-Generated Outputs
+
+Daily calorie requirement (kcal/day)
+
+Protein requirement (g/day)
+
+Carbohydrate requirement (g/day)
+
+Fat requirement (g/day)
+
+⚙️ Model & Backend
+
+Backend Framework: FastAPI (REST API)
+
+Machine Learning Model: Trained Random Forest Regression Model
+
+Database: PostgreSQL
+
+Stores prediction history
+
+Stores user-specific nutrition records
+
+⭐ Key Highlights
+
+Results displayed using a clear, card-based layout
+
+Macro-nutrients visually separated for easy interpretation
+
+Prediction results can be saved and retrieved via the History section
+
+Designed for scalability with future health-data integrations
+
+🔁 End-to-End Workflow
+
+User opens the FitNourish.AI mobile application
+
+Health and activity data are entered or synced from a smartwatch
+
+Data is validated on the frontend
+
+Backend AI model processes the input
+
+Personalized nutrition targets are generated
+
+Results are displayed and stored for future reference
+
+🎯 Purpose of This Component
+
+AI-driven personalization in healthcare and nutrition
+
+Seamless integration of frontend, backend, machine learning, and database layers
+
+Readiness for real-world wearable device integration
+
+Professional, user-centric mobile application design
 
 ### Component 2 - AI-powered Dynamic Meal Generator and Visual Ingredient Identifier
 
@@ -101,4 +267,79 @@ The system architecture of FitNourish AI is illustrated below:
    - Ingredient lists
    - Nutritional information
    - Calorie content
+  
+     
+
+  ### Component 4 - AI-powered Smart Grocery List Optimization and Nearest Store Recommendation
+
+  <table>
+  <tr>
+    <td width="33%">
+      <img src="images/Component 4 image 1.png" alt="Home Dashboard & Category Access" />
+    </td>
+    <td width="33%">
+      <img src="images/Component 4 image 2.png" alt="Cheapest Nearest Store Recommendation" />
+    </td>
+    <td width="33%">
+      <img src="images/Component 4 image 3.png" alt="Nutrition Substitution Interface" />
+    </td>
+  </tr>
+</table>
+
+#### Cheapest & Nearest Store Recommendation
+
+1.Users enter a custom grocery list along with a budget range.
+
+2.The system automatically detects the user’s current location using device location services.
+
+3.Distance from the user’s location to nearby stores is calculated in real time.
+
+4.The system calculates the total cost of the list for each store.
+
+5.Store recommendations are generated by considering:
+   - Promotional prices
+   - Total cost of the complete grocery list
+   - Physical distance from the user to each store
+     
+6.The app highlights:
+
+    - The best store offering the highest savings
+    - Distance to each store from the user
+    - Estimated savings amount compared to other stores
+
+
+#### Nutrition-Aware Substitution
+
+1.When a selected item exceeds the user’s budget, the system suggests cheaper alternatives.
+
+2.Each suggested alternative is evaluated based on:
+     - Nutritional similarity (per 100g)
+     - Price difference (money saved)
+     
+3.Nutrition information displayed includes:
+
+     - Energy (kcal)
+     - Protein
+     - Fat
+     - Carbohydrates
+     
+ 4.Similarity levels (High / Medium / Low) help users make informed decisions.
+
+
+#### Category Browsing & Item Discovery
+
+1.Users can browse grocery categories such as Fruits and Snacks from the home screen.
+
+2.Categories are organized using a rule-based hierarchical structure and Ml Mpdel.
+
+3.Selecting a category allows users to explore related grocery items available across stores.
+
+
+
+
+
+
+
+
+
 
