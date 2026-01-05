@@ -326,7 +326,7 @@ Professional, user-centric mobile application design
  4.Similarity levels (High / Medium / Low) help users make informed decisions.
 
 
-#### Nutrition-Aware Substitution
+#### Category Browsing & Item Discovery
 
 1.Users can browse grocery categories such as Fruits and Snacks from the home screen.
 
