@@ -284,52 +284,52 @@ Professional, user-centric mobile application design
 
 #### Health Data Input
 
-Connect a smartwatch or wearable device (or use simulated data)
-Automatically collect daily health data:
-  Physical activity level
-  Blood pressure
-  Sleep duration and quality
-Enter additional user details:
-  Age, gender, weight
-  Lifestyle habits
-  Daily food intake (breakfast, lunch, dinner)
+1. Connect a smartwatch or wearable device (or use simulated data)
+2. Automatically collect daily health data:
+  - Physical activity level
+  - Blood pressure
+  - Sleep duration and quality
+3. Enter additional user details:
+  - Age, gender, weight
+  - Lifestyle habits
+  - Daily food intake (breakfast, lunch, dinner)
 
 
 #### Health Risk Prediction
 
-Navigate to the Health Prediction section
-Review automatically collected data from the wearable and user profile
-Enter additional inputs if required:
-  Current weight
-  Daily food intake
-Click "Predict Health Risk"
-  View prediction results:
-  Health risk level (Low / Medium / High)
-  Factors influencing the prediction
-  AI-based disclaimer
-  Predicted diet recommendations
-  Key health principles to follow
+1. Navigate to the Health Prediction section
+2. Review automatically collected data from the wearable and user profile
+3. Enter additional inputs if required:
+  - Current weight
+  - Daily food intake
+4. Click "Predict Health Risk"
+  - View prediction results:
+  - Health risk level (Low / Medium / High)
+  - Factors influencing the prediction
+  - AI-based disclaimer
+  - Predicted diet recommendations
+  - Key health principles to follow
 
 
 #### Health Progress Tracking
 
-Open the Progress Tracking section
-View latest health measurements
-Analyze trends over time:
-  Daily, weekly, and monthly views
-Monitor:
-  Improvements or declines in activity, sleep, and vital signs
-View overall health summary and insights
+1. Open the Progress Tracking section
+2. View latest health measurements
+3. Analyze trends over time:
+  - Daily, weekly, and monthly views
+4. Monitor:
+  - Improvements or declines in activity, sleep, and vital signs
+5. View overall health summary and insights
 
 
 #### Alerts & Notifications
 
-Access the Alerts section
-Receive time-based notifications:
-  Before breakfast, lunch, and dinner
-  Risk-based health alerts
-View alert history
-Follow alerts to improve daily health behavior
+1. Access the Alerts section
+2. Receive time-based notifications:
+  - Before breakfast, lunch, and dinner
+  - Risk-based health alerts
+3. View alert history
+4. Follow alerts to improve daily health behavior
      
 
   ### Component 4 - AI-powered Smart Grocery List Optimization and Nearest Store Recommendation
