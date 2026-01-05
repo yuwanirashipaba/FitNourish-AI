@@ -76,7 +76,7 @@ This component of FitNourish.AI focuses on delivering personalized nutrition rec
       <img 
         src="images/Component%2001%20snapshot.png" 
         alt="FitNourish.AI Nutrition Prediction Mobile Interface"
-        width="70%"
+        width="45%"
       />
       <br/><br/>
       <b>FitNourish.AI – Nutrition Profile Input & Prediction Result Interface</b>
