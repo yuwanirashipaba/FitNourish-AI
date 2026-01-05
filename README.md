@@ -101,92 +101,134 @@ This component of FitNourish.AI focuses on delivering personalized nutrition rec
 </table>
 
 
-The mobile interface consists of two primary screens:
+📱 Mobile Interface Overview
+
+The FitNourish.AI mobile application consists of two primary screens:
 
 Nutrition Profile Input Interface
 
 Nutrition Prediction Result Interface
 
-These interfaces guide users through a simple and intuitive workflow—from data entry to AI-generated nutrition insights.
+These screens guide users through a simple and intuitive workflow — from entering personal health data to receiving AI-generated nutrition insights.
 
 🧑‍⚕️ Nutrition Profile Input Interface
 
-This screen collects essential user health and activity information required for accurate nutrition prediction.
+This interface collects essential health, lifestyle, and activity data required for accurate nutrition prediction.
 
 📋 User Inputs
 
 Personal Information
-1.Age
-2.Gender (Male / Female)
-3.Height (cm)
-4.Weight (kg)
-5.Nutrition Goal
-6.Maintain weight
-7.Lose weight
-8.Gain weight
-9.Health Conditions
-10.Diabetes (Yes / No)
-11.Hypertension (Yes / No)
-12.Daily Activity Metrics
-13.Steps per day
-14.Active minutes
-15.Calories burned during activity
+
+Age
+
+Gender (Male / Female)
+
+Height (cm)
+
+Weight (kg)
+
+Nutrition Goal
+
+Maintain weight
+
+Lose weight
+
+Gain weight
+
+Health Conditions
+
+Diabetes (Yes / No)
+
+Hypertension (Yes / No)
+
+Daily Activity Metrics
+
+Steps per day
+
+Active minutes
+
+Calories burned during activity
 
 🎨 Smart Validation & User Experience (UX)
 
-💪Input validation ensures realistic and medically meaningful values
-   (e.g., step count limits, numeric constraints)
-💪Toggle buttons and dropdowns are used instead of free-text inputs
-💪A green-themed UI aligns with the FitNourish.AI brand identity
-💪Mobile-friendly layout enhances usability and clarity
+Input validation ensures realistic and medically meaningful values
+(e.g., step count limits, numeric constraints)
+
+Toggle buttons and dropdowns replace free-text inputs to reduce errors
+
+Green-themed UI aligns with the FitNourish.AI brand identity
+
+Mobile-friendly layout improves clarity, accessibility, and usability
 
 ⌚ Smartwatch Data Integration (Demo Logic)
 
-*During first-time setup, users manually enter activity data
-*In a real-world deployment, this data is designed to be:
-*Automatically fetched from smartwatch or fitness tracker APIs
-*Periodically updated to keep nutrition recommendations current
+During first-time setup, users manually enter activity data
+
+In real-world deployment, this data is designed to be:
+
+Automatically fetched from smartwatch or fitness-tracker APIs
+
+Periodically updated to keep nutrition recommendations current
 
 📊 Nutrition Prediction Result Interface
 
-Once the user clicks “Predict & Save”, the validated data is sent to the backend AI system for processing.
+After clicking “Predict & Save”, the validated input data is sent to the backend AI system for processing.
 
 🤖 AI-Generated Outputs
 
-❤️Daily Calorie Requirement (kcal/day)
-❤️Protein Requirement (g/day)
-❤️Carbohydrate Requirement (g/day)
-❤️Fat Requirement (g/day)
+Daily calorie requirement (kcal/day)
+
+Protein requirement (g/day)
+
+Carbohydrate requirement (g/day)
+
+Fat requirement (g/day)
 
 ⚙️ Model & Backend
 
-*Backend Framework: FastAPI (REST API)
-*Machine Learning Model: Trained Random Forest Regression Model
-*Database: PostgreSQL (stores prediction history and user records)
+Backend Framework: FastAPI (REST API)
+
+Machine Learning Model: Trained Random Forest Regression Model
+
+Database: PostgreSQL
+
+Stores prediction history
+
+Stores user-specific nutrition records
 
 ⭐ Key Highlights
 
-💪Results are displayed using a clear, card-based layout
-💪Macro-nutrients are visually separated for easy interpretation
-💪Prediction results can be saved and viewed later via the History section
-💪Designed for scalability with future health data integrations
+Results displayed using a clear, card-based layout
+
+Macro-nutrients visually separated for easy interpretation
+
+Prediction results can be saved and retrieved via the History section
+
+Designed for scalability with future health-data integrations
 
 🔁 End-to-End Workflow
 
-*User opens the FitNourish.AI mobile application
-*Health and activity data are entered or synced from a smartwatch
-*Data is validated on the frontend
-*Backend AI model processes the input
-*Personalized nutrition targets are generated
-*Results are displayed and stored for future reference
+User opens the FitNourish.AI mobile application
+
+Health and activity data are entered or synced from a smartwatch
+
+Data is validated on the frontend
+
+Backend AI model processes the input
+
+Personalized nutrition targets are generated
+
+Results are displayed and stored for future reference
 
 🎯 Purpose of This Component
 
-1.AI-driven personalization in healthcare and nutrition
-2.Integration of frontend, backend, machine learning, and database layers
-3.Readiness for real-world wearable device integration
-4.A professional, user-centric mobile application design
+AI-driven personalization in healthcare and nutrition
 
+Seamless integration of frontend, backend, machine learning, and database layers
+
+Readiness for real-world wearable device integration
+
+Professional, user-centric mobile application design
 
 ### Component 2 - AI-powered Dynamic Meal Generator and Visual Ingredient Identifier
 
