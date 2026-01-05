@@ -36,7 +36,23 @@ The system architecture of FitNourish AI is illustrated below:
 ![Architecture Diagram](images/architecture.jpeg)
 
 ## ✨ Key Features
-
+- **Personalized nutrition prediction** using a trained Machine Learning model
+- **Daily calorie requirement calculation** (kcal/day)
+- **Macronutrient prediction**:
+  - Protein (g/day)
+  - Carbohydrates (g/day)
+  - Fat (g/day)
+- **Multi-disease aware nutrition planning**:
+  - Diabetes support
+  - Hypertension support
+- **Goal-based nutrition optimization**:
+  - Maintain weight
+  - Lose weight
+  - Gain weight
+- **Activity-aware nutrition planning** using:
+  - Steps per day
+  - Active minutes
+  - Calories burned during activity
 - **Personalized meal planning** using machine learning
 - **Smartwatch-based biometric** and wellness monitoring
 - **Food image analysis** using computer vision
